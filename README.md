@@ -1,4 +1,4 @@
-# CountryStateCityProvider
+# CountryStateCityDataProvider
 World`s Country State City Provider for Laravel 5.x
 
 Steps.
