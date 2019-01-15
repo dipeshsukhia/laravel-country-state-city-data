@@ -56,8 +56,8 @@ class CreateCountryStateCityTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('city');
-        Schema::dropIfExists('state');
-        Schema::dropIfExists('country');
+        Schema::dropIfExists('cities');
+        Schema::dropIfExists('states');
+        Schema::dropIfExists('countries');
     }
 }
