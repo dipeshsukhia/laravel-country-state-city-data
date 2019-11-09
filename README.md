@@ -1,14 +1,53 @@
-# CountryStateCityDataProvider
-World`s Country State City Provider for Laravel 5.x
+# Very short description of the package
 
-Steps.
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
+[![Build Status](https://img.shields.io/travis/dipeshsukhia/laravel-country-state-city-data/master.svg?style=flat-square)](https://travis-ci.org/dipeshsukhia/laravel-country-state-city-data)
+[![Quality Score](https://img.shields.io/scrutinizer/g/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://scrutinizer-ci.com/g/dipeshsukhia/laravel-country-state-city-data)
+[![Total Downloads](https://img.shields.io/packagist/dt/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
 
-1) Paste DataProviders in App directory.
-2) Paste Models in App directory.
-3) Paste migration in database/migration directory.
-4) Paste seeder file in migration/seeds directory.
-5) Run composer-dump autpload
-6) Run php artisan migrate
-7) Run php artisan db:seed --class=CountryStateCityTableSeeder 
+This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+## Installation
+
+You can install the package via composer:
+
+```bash
+composer require dipeshsukhia/laravel-country-state-city-data
+```
+
+## Usage
+
+``` php
+run below cammands
+1) php artisan vendor:publish --tag=LaravelCountryStateCityData
+2) composer-dump autoload
+3) php artisan migrate
+// Usage description here
+```
+
+### Testing
+
+``` bash
+composer test
+```
+
+### Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+### Security
+
+If you discover any security related issues, please email dipesh.sukhia@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [Dipesh Sukhia](https://github.com/dipeshsukhia)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

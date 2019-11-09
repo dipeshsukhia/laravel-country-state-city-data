@@ -1,0 +1,55 @@
+{
+    "name": "dipeshsukhia/laravel-country-state-city-data",
+    "description": "Country State City Data Provider",
+    "keywords": [
+        "dipeshsukhia",
+        "laravel-country-state-city-data"
+    ],
+    "homepage": "https://github.com/dipeshsukhia/laravel-country-state-city-data",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dipesh Sukhia",
+            "email": "dipesh.sukhia@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DipeshSukhia\\LaravelCountryStateCityData\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DipeshSukhia\\LaravelCountryStateCityData\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DipeshSukhia\\LaravelCountryStateCityData\\LaravelCountryStateCityDataServiceProvider"
+            ],
+            "aliases": {
+                "LaravelCountryStateCityData": "DipeshSukhia\\LaravelCountryStateCityData\\LaravelCountryStateCityDataFacade"
+            }
+        }
+    }
+}
