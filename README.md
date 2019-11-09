@@ -1,11 +1,11 @@
-# Very short description of the package
+# description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
 [![Build Status](https://img.shields.io/travis/dipeshsukhia/laravel-country-state-city-data/master.svg?style=flat-square)](https://travis-ci.org/dipeshsukhia/laravel-country-state-city-data)
 [![Quality Score](https://img.shields.io/scrutinizer/g/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://scrutinizer-ci.com/g/dipeshsukhia/laravel-country-state-city-data)
 [![Total Downloads](https://img.shields.io/packagist/dt/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+World`s Country State City Provider for Laravel 5.x and 6.x
 
 ## Installation
 
