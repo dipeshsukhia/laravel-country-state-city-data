@@ -20,7 +20,7 @@ composer require dipeshsukhia/laravel-country-state-city-data
 ``` php
 run below cammands
 1) php artisan vendor:publish --tag=LaravelCountryStateCityData
-2) composer-dump autoload
+2) composer dump-autoload
 3) php artisan migrate
 ```
 
