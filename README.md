@@ -22,7 +22,6 @@ run below cammands
 1) php artisan vendor:publish --tag=LaravelCountryStateCityData
 2) composer-dump autoload
 3) php artisan migrate
-// Usage description here
 ```
 
 ### Testing
