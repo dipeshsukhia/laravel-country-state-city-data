@@ -3,18 +3,23 @@
     "description": "Country State City Data Provider",
     "keywords": [
         "dipeshsukhia",
-        "laravel-country-state-city-data"
+        "laravel-country-state-city-data",
+        "countries",
+        "country",
+        "laravel",
+        "state",
+        "states",
+        "city",
+        "cities"
     ],
     "homepage": "https://github.com/dipeshsukhia/laravel-country-state-city-data",
     "license": "MIT",
     "type": "library",
-    "authors": [
-        {
-            "name": "Dipesh Sukhia",
-            "email": "dipesh.sukhia@gmail.com",
-            "role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Dipesh Sukhia",
+        "email": "dipesh.sukhia@gmail.com",
+        "role": "Developer"
+    }],
     "require": {
         "php": ">=5.5.9",
         "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0"
