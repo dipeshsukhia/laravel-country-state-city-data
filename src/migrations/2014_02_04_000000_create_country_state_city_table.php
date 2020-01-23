@@ -32,7 +32,7 @@ class CreateCountryStateCityTable extends Migration
             $table->timestamp('updated_at')->useCurrent();
             $table->softDeletes();
 
-            $table->foreign('country_id')->references('id')->on('country')
+            $table->foreign('country_id')->references('id')->on('countries')
                 ->onUpdate('cascade')->onDelete('cascade');
         });
 
@@ -45,7 +45,7 @@ class CreateCountryStateCityTable extends Migration
             $table->timestamp('updated_at')->useCurrent();
             $table->softDeletes();
 
-            $table->foreign('state_id')->references('id')->on('state')
+            $table->foreign('state_id')->references('id')->on('states')
                 ->onUpdate('cascade')->onDelete('cascade');
         });
         Artisan::call('db:seed', [
