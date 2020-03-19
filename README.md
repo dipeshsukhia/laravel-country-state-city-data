@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://scrutinizer-ci.com/g/dipeshsukhia/laravel-country-state-city-data)
 [![Total Downloads](https://img.shields.io/packagist/dt/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
 
-World`s Country State City Provider for Laravel 5.x and 6.x
+World`s Country State City Provider for Laravel 5.x, 6.x, 7.x
 
 ## Installation
 
