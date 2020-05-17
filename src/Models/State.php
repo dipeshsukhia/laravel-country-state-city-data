@@ -13,10 +13,10 @@ class State extends Model
     ];
     public function cities()
     {
-        return $this->hasMany(City::class)->withDefault();
+        return $this->hasMany(City::class);
     }
     public function country()
     {
-        return $this->belongsTo(Country::class)->withTrashed();
+        return $this->belongsTo(Country::class);
     }
 }
