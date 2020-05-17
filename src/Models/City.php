@@ -13,6 +13,6 @@ class City extends Model
     ];
     public function state()
     {
-        return $this->belongsTo(State::class)->withTrashed();
+        return $this->belongsTo(State::class);
     }
 }
