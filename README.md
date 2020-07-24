@@ -1,4 +1,4 @@
-# description of the package
+# laravel-country-state-city-data for laravel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
 [![Build Status](https://img.shields.io/travis/dipeshsukhia/laravel-country-state-city-data/master.svg?style=flat-square)](https://travis-ci.org/dipeshsukhia/laravel-country-state-city-data)
