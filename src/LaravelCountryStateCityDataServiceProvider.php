@@ -37,10 +37,10 @@ class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
             /* seeders */
             if(is_dir(database_path('seeds'))){
                 $seedDir = database_path('seeds');
-                $seederNameSpace = "Seeder";
+                $seederNameSpace = "";
             }else{
                 $seedDir = database_path('seeders');
-                $seederNameSpace = "Seeders";
+                $seederNameSpace = "namespace Database\\Seeders";
             }
             $seederTemplate = self::getStubContents('CountryStateCityTableSeeder.stub');
             $seederTemplate = str_replace('{{seederNameSpace}}', $seederNameSpace, $seederTemplate);
