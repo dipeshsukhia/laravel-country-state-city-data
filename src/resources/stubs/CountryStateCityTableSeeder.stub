@@ -1,11 +1,11 @@
 <?php
+namespace Database\{{seederNameSpace}};
 
 use Illuminate\Database\Seeder;
-use App\Country;
-use App\State;
-use App\City;
+use App{{modelNameSpace}}\Country;
+use App{{modelNameSpace}}\State;
+use App{{modelNameSpace}}\City;
 use App\DataProviders\CountryStateCityDataProvider;
-
 
 class CountryStateCityTableSeeder extends Seeder
 {
@@ -17,9 +17,7 @@ class CountryStateCityTableSeeder extends Seeder
     public function run()
     {
         Country::insert(CountryStateCityDataProvider::Countries());
-
         State::insert(CountryStateCityDataProvider::States());
-
         foreach (collect(CountryStateCityDataProvider::Cities())->chunk(15000) as $chunkCities){
             City::insert($chunkCities->toArray());
         }
