@@ -1,11 +1,11 @@
-# laravel country-state-city-data
+# Laravel country-state-city-data
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
 [![Build Status](https://img.shields.io/travis/dipeshsukhia/laravel-country-state-city-data/master.svg?style=flat-square)](https://travis-ci.org/dipeshsukhia/laravel-country-state-city-data)
 [![Quality Score](https://img.shields.io/scrutinizer/g/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://scrutinizer-ci.com/g/dipeshsukhia/laravel-country-state-city-data)
 [![Total Downloads](https://img.shields.io/packagist/dt/dipeshsukhia/laravel-country-state-city-data.svg?style=flat-square)](https://packagist.org/packages/dipeshsukhia/laravel-country-state-city-data)
 
-World`s Country State City Provider for Laravel 5.x, 6.x, 7.x, 8.x
+World`s Country State City Provider for Laravel
 
 ## Installation
 
@@ -24,10 +24,11 @@ run below commands
 3) php artisan migrate
 ```
 
-### Testing
+### Requirements
 
 ``` bash
-composer test
+Laravel 5.x,6.x, 7.x or 8.x
+PHP >= 7.0 or 8.0
 ```
 
 ### Changelog
