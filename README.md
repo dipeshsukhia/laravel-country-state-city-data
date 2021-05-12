@@ -16,17 +16,14 @@ composer require dipeshsukhia/laravel-country-state-city-data --dev
 ## Usage
 
 ``` php
-run below commands
-1) php artisan vendor:publish --tag=LaravelCountryStateCityData
-2) composer dump-autoload
-3) php artisan migrate
+php artisan country-data:install
 ```
 
 ### Requirements
 
 ``` bash
-Laravel 5.x,6.x, 7.x or 8.x
-PHP >= 7.0 or 8.0
+Laravel 5.8.x, 6.x, 7.x or 8.x
+PHP >= 7.1.3 or Grater
 ```
 
 ## Contributing
@@ -40,6 +37,7 @@ If you discover any security related issues, please email dipesh.sukhia@gmail.co
 ## Credits
 
 - [Dipesh Sukhia](https://github.com/dipeshsukhia)
+- [Bhavin Gajjar](https://github.com/bhavingajjar)
 - [All Contributors](../../contributors)
 
 ## License

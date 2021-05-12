@@ -48,9 +48,6 @@ class CreateCountryStateCityTable extends Migration
             $table->foreign('state_id')->references('id')->on('states')
                 ->onUpdate('cascade')->onDelete('cascade');
         });
-        Artisan::call('db:seed', [
-            '--class' => CountryStateCityTableSeeder::class
-        ]);
     }
 
     /**
