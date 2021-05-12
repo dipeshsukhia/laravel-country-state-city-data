@@ -2,6 +2,8 @@
 
 namespace DipeshSukhia\LaravelCountryStateCityData;
 
+use DipeshSukhia\LaravelCountryStateCityData\Console\Commands\Install;
+use DipeshSukhia\LaravelCountryStateCityData\Console\Commands\InstallCountryDataPackage;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
@@ -25,9 +27,9 @@ class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
             }
 
             foreach (['Country', 'State', 'City'] as $modelName) {
-                $ModelTemplate = self::getStubContents("Models/".$modelName.".stub");
+                $ModelTemplate = self::getStubContents("Models/" . $modelName . ".stub");
                 $ModelTemplate = str_replace('{{modelNameSpace}}', $modelNameSpace, $ModelTemplate);
-                file_put_contents($modelDir . "/".$modelName.".php", $ModelTemplate);
+                file_put_contents($modelDir . "/" . $modelName . ".php", $ModelTemplate);
             }
 
             /* model */
@@ -52,6 +54,11 @@ class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
                 __DIR__ . '/resources/DataProviders/StateDataProvider.stub' => app_path('DataProviders/StateDataProvider.php'),
                 __DIR__ . '/resources/DataProviders/CityDataProvider.stub' => app_path('DataProviders/CityDataProvider.php'),
             ], 'LaravelCountryStateCityData');
+
+            // Registering package commands.
+            $this->commands([
+                InstallCountryDataPackage::class,
+            ]);
         }
     }
 

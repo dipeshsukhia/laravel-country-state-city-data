@@ -4,9 +4,6 @@ namespace DipeshSukhia\LaravelCountryStateCityData;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \DipeshSukhia\LaravelCountryStateCityData\Skeleton\SkeletonClass
- */
 class LaravelCountryStateCityDataFacade extends Facade
 {
     /**
@@ -14,7 +11,7 @@ class LaravelCountryStateCityDataFacade extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'laravel-country-state-city-data';
     }
