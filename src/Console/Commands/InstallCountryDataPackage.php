@@ -2,6 +2,7 @@
 
 namespace DipeshSukhia\LaravelCountryStateCityData\Console\Commands;
 
+use Database\Seeders\CountryStateCityTableSeeder;
 use Illuminate\Console\Command;
 
 class InstallCountryDataPackage extends Command
@@ -41,9 +42,14 @@ class InstallCountryDataPackage extends Command
 
         $this->info('Publishing Configuration...');
         $this->publishConfiguration(true);
-        $this->info('Published configuration');
 
-        $this->call('migrate');
+        $this->call('migrate', [
+            '--path' => database_path('migrations/2014_02_04_000000_create_country_state_city_table.php')
+        ]);
+
+        $this->call('db:seed', [
+            '--class' => CountryStateCityTableSeeder::class
+        ]);
 
         $this->info('Installed Country Data');
         return true;

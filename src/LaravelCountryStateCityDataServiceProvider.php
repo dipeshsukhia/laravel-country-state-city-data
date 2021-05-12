@@ -2,7 +2,6 @@
 
 namespace DipeshSukhia\LaravelCountryStateCityData;
 
-use DipeshSukhia\LaravelCountryStateCityData\Console\Commands\Install;
 use DipeshSukhia\LaravelCountryStateCityData\Console\Commands\InstallCountryDataPackage;
 use Illuminate\Support\ServiceProvider;
 
@@ -17,6 +16,7 @@ class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
     {
 
         if ($this->app->runningInConsole()) {
+
             /* model */
             if (is_dir(base_path('app/Models'))) {
                 $modelDir = base_path('app/Models');
@@ -31,7 +31,6 @@ class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
                 $ModelTemplate = str_replace('{{modelNameSpace}}', $modelNameSpace, $ModelTemplate);
                 file_put_contents($modelDir . "/" . $modelName . ".php", $ModelTemplate);
             }
-
             /* model */
 
             /* seeders */
@@ -48,12 +47,14 @@ class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
             file_put_contents($seedDir . '/CountryStateCityTableSeeder.php', $seederTemplate);
             /* seeders */
 
+            /* stubs */
             $this->publishes([
-                __DIR__ . '/resources/migrations/2014_02_04_000000_create_country_state_city_table.stub' => database_path('migrations/2014_02_04_000000_create_country_state_city_table.php'),
-                __DIR__ . '/resources/DataProviders/CountryDataProvider.stub' => app_path('DataProviders/CountryDataProvider.php'),
-                __DIR__ . '/resources/DataProviders/StateDataProvider.stub' => app_path('DataProviders/StateDataProvider.php'),
-                __DIR__ . '/resources/DataProviders/CityDataProvider.stub' => app_path('DataProviders/CityDataProvider.php'),
+                __DIR__ . '/resources/stubs/migrations/2014_02_04_000000_create_country_state_city_table.stub' => database_path('migrations/2014_02_04_000000_create_country_state_city_table.php'),
+                __DIR__ . '/resources/stubs/DataProviders/CountryDataProvider.stub' => app_path('DataProviders/CountryDataProvider.php'),
+                __DIR__ . '/resources/stubs/DataProviders/StateDataProvider.stub' => app_path('DataProviders/StateDataProvider.php'),
+                __DIR__ . '/resources/stubs/DataProviders/CityDataProvider.stub' => app_path('DataProviders/CityDataProvider.php'),
             ], 'LaravelCountryStateCityData');
+            /* stubs */
 
             // Registering package commands.
             $this->commands([
@@ -67,7 +68,7 @@ class LaravelCountryStateCityDataServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        //
     }
 
     private function getStubContents($stubName)
