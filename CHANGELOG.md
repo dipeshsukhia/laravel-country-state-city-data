@@ -2,6 +2,6 @@
 
 All notable changes to `laravel-country-state-city-data` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 2.0.0 - 2021-05-12
 
-- initial release
+- "Integrity constraint violation: 1062 Duplicate entry" Issue fixed
