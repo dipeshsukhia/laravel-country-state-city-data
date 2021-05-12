@@ -41,10 +41,10 @@ class InstallCountryDataPackage extends Command
         $this->info('Installing Country Data...');
 
         $this->info('Publishing Configuration...');
-        $this->publishConfiguration(true);
+        $this->publishConfiguration(false);
 
         $this->call('migrate', [
-            '--path' => database_path('migrations/2014_02_04_000000_create_country_state_city_table.php')
+            '--path' => 'database/migrations/2014_02_04_000000_create_country_state_city_table.php'
         ]);
 
         $this->call('db:seed', [
