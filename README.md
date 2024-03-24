@@ -22,7 +22,7 @@ php artisan country-data:install
 ### Requirements
 
 ``` bash
-Laravel 5.8.x, 6.x, 7.x, 8.x, 9.x, 10.x
+Laravel 5.8.x, 6.x, 7.x, 8.x, 9.x, 10.x, 11.x
 PHP >= 7.1.3 or Grater
 ```
 

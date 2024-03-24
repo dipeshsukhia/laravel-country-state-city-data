@@ -29,11 +29,10 @@
     ],
     "require": {
         "php": ">=7.1.3",
-        "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0"
+        "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.0",
-        "phpunit/phpunit": "^9.0|^10.0"
+        "phpunit/phpunit": "^9.0|^10.5"
     },
     "autoload": {
         "psr-4": {
@@ -49,18 +48,12 @@
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
-    "config": {
-        "sort-packages": true
-    },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
                 "DipeshSukhia\\LaravelCountryStateCityData\\LaravelCountryStateCityDataServiceProvider"
-            ],
-            "aliases": {
-                "LaravelCountryStateCityData": "DipeshSukhia\\LaravelCountryStateCityData\\LaravelCountryStateCityDataFacade"
-            }
+            ]
         }
     }
 }
